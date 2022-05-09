@@ -155,7 +155,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Nikola Nushev\\source\\repos\\SoproSpringBoard\\SoproSpringBoard.Domain\\SoproSpringBoard.Domain.csproj": {
+                "projectPath": "C:\\Users\\Nikola Nushev\\source\\repos\\SoproSpringBoard\\SoproSpringBoard.Domain\\SoproSpringBoard.Domain.csproj"
+              },
+              "C:\\Users\\Nikola Nushev\\source\\repos\\SoproSpringBoard\\SoproSpringBoard.Repository\\SoproSpringBoard.Repository.csproj": {
+                "projectPath": "C:\\Users\\Nikola Nushev\\source\\repos\\SoproSpringBoard\\SoproSpringBoard.Repository\\SoproSpringBoard.Repository.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

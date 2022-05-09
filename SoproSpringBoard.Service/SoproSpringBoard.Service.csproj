@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SoproSpringBoard.Domain\SoproSpringBoard.Domain.csproj" />
+    <ProjectReference Include="..\SoproSpringBoard.Repository\SoproSpringBoard.Repository.csproj" />
+  </ItemGroup>
+
 </Project>
