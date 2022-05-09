@@ -1,0 +1,7 @@
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard\obj\Debug\netcoreapp3.1\SoproSpringBoard.csproj.AssemblyReference.cache
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard\obj\Debug\netcoreapp3.1\SoproSpringBoard.AssemblyInfoInputs.cache
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard\obj\Debug\netcoreapp3.1\SoproSpringBoard.AssemblyInfo.cs
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard\obj\Debug\netcoreapp3.1\SoproSpringBoard.csproj.CoreCompileInputs.cache
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard\obj\Debug\netcoreapp3.1\SoproSpringBoard.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard\obj\Debug\netcoreapp3.1\SoproSpringBoard.RazorAssemblyInfo.cache
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard\obj\Debug\netcoreapp3.1\SoproSpringBoard.RazorAssemblyInfo.cs

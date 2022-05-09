@@ -1,0 +1,8 @@
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Service\bin\Debug\netcoreapp3.1\SoproSpringBoard.Service.deps.json
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Service\bin\Debug\netcoreapp3.1\SoproSpringBoard.Service.dll
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Service\bin\Debug\netcoreapp3.1\SoproSpringBoard.Service.pdb
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Service\obj\Debug\netcoreapp3.1\SoproSpringBoard.Service.AssemblyInfoInputs.cache
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Service\obj\Debug\netcoreapp3.1\SoproSpringBoard.Service.AssemblyInfo.cs
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Service\obj\Debug\netcoreapp3.1\SoproSpringBoard.Service.csproj.CoreCompileInputs.cache
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Service\obj\Debug\netcoreapp3.1\SoproSpringBoard.Service.dll
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Service\obj\Debug\netcoreapp3.1\SoproSpringBoard.Service.pdb

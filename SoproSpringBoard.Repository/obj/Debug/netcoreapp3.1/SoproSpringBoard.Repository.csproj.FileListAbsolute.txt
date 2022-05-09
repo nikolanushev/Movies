@@ -1,0 +1,4 @@
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\obj\Debug\netcoreapp3.1\SoproSpringBoard.Repository.csproj.AssemblyReference.cache
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\obj\Debug\netcoreapp3.1\SoproSpringBoard.Repository.AssemblyInfoInputs.cache
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\obj\Debug\netcoreapp3.1\SoproSpringBoard.Repository.AssemblyInfo.cs
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\obj\Debug\netcoreapp3.1\SoproSpringBoard.Repository.csproj.CoreCompileInputs.cache
