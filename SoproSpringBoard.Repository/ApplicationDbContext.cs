@@ -10,7 +10,7 @@ using System.Text;
 
 namespace SoproSpringBoard.Repository
 {
-    public class ApplicationDbContext : IdentityDbContext<MovieApplicationUser>
+    public class ApplicationDbContext : IdentityDbContext
     {
         public virtual DbSet<Movie> Movies { get; set; }
         public virtual DbSet<Genre> Genres { get; set; }

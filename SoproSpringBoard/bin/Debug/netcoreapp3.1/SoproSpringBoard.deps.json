@@ -2415,6 +2415,10 @@
         }
       },
       "SoproSpringBoard.Service/1.0.0": {
+        "dependencies": {
+          "SoproSpringBoard.Domain": "1.0.0",
+          "SoproSpringBoard.Repository": "1.0.0"
+        },
         "runtime": {
           "SoproSpringBoard.Service.dll": {}
         },
