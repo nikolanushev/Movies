@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SoproSpringBoard.Domain.Identity;
@@ -17,6 +18,7 @@ namespace SoproSpringBoard.Repository
         public virtual DbSet<MoviesInLibrary> MoviesInLibrary { get; set; }
         public virtual DbSet<MovieInGenre> MoviesGenre { get; set; }
         public virtual DbSet<PersonInMovie> MoviesPerson { get; set; }
+        public virtual DbSet<MovieApplicationUser> MovieApplicationUsers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -24,6 +26,11 @@ namespace SoproSpringBoard.Repository
             builder.Entity<MoviesInLibrary>().HasKey(c => new { c.LibraryId, c.MovieId });
             builder.Entity<MovieInGenre>().HasKey(k => new { k.MovieId, k.GenreId });
             builder.Entity<PersonInMovie>().HasKey(k => new { k.MovieId, k.PersonId });
+
+            builder
+                .Entity<Genre>()
+                .HasMany(p => p.Movies)
+                .WithOne(p => p.Genres);
 
         }
 

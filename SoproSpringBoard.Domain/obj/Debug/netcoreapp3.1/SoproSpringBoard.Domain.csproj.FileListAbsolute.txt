@@ -6,3 +6,4 @@ C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Domain\obj
 C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Domain\obj\Debug\netcoreapp3.1\SoproSpringBoard.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Domain\obj\Debug\netcoreapp3.1\SoproSpringBoard.Domain.dll
 C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Domain\obj\Debug\netcoreapp3.1\SoproSpringBoard.Domain.pdb
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Domain\obj\Debug\netcoreapp3.1\SoproSpringBoard.Domain.csproj.AssemblyReference.cache

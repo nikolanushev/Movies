@@ -1,0 +1,48 @@
+﻿@model List<SoproSpringBoard.Domain.Models.Movie>
+
+@{
+    ViewData["Title"] = "Movies List";
+}
+
+<h3 class="text-center">All movies</h3>
+<hr />
+
+<div class="container">
+    <div class="col mb-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <a class="btn btn-secondary bi bi-plus-circle float-right" asp-controller="Movies" asp-action="Create">New Movie</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        var item = Model[i];
+
+        if (i % 3 == 0)
+        {
+            @:<div class="row">
+            }
+
+            <div class="card" style="width: 21rem; margin:10px;">
+                <img class="card-img-top" src="@item.MovieImage" alt="Card image cap" style="height:90%; width:100%">
+                <div class="card-body">
+                    <h5 class="card-title">@item.MovieName</h5>
+                    <p class="card-text"><small>RATING: @item.MovieRating</small></p>
+                    <p class="card-text"><small>RELEASE: @item.MovieReleaseDate</small></p>
+                    <a href="/Products/AddToCart?productId=@item.Id&CartId=1" class="btn btn-info">To Library</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Edit</a>
+                    <a class="btn btn-warning" href="@item.MovieIMBDURL">IMDB</a>
+                </div>
+            </div>
+
+            if (i % 3 == 2)
+            {
+            @:</div>
+        }
+    }
+
+</div>

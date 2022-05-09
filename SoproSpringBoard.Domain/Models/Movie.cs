@@ -25,7 +25,7 @@ namespace SoproSpringBoard.Domain.Models
         [Display(Name = "IMDB")]
         public string MovieIMBDURL { get; set; }
 
-        public List<Genre> Genres { get; set; }
+        public Genre Genres { get; set; }
 
         public ICollection<MoviesInLibrary> MoviesInLibrary { get; set; }
 

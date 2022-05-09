@@ -2,3 +2,11 @@ C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository
 C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\obj\Debug\netcoreapp3.1\SoproSpringBoard.Repository.AssemblyInfoInputs.cache
 C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\obj\Debug\netcoreapp3.1\SoproSpringBoard.Repository.AssemblyInfo.cs
 C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\obj\Debug\netcoreapp3.1\SoproSpringBoard.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\bin\Debug\netcoreapp3.1\SoproSpringBoard.Repository.deps.json
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\bin\Debug\netcoreapp3.1\SoproSpringBoard.Repository.dll
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\bin\Debug\netcoreapp3.1\SoproSpringBoard.Repository.pdb
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\bin\Debug\netcoreapp3.1\SoproSpringBoard.Domain.dll
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\bin\Debug\netcoreapp3.1\SoproSpringBoard.Domain.pdb
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\obj\Debug\netcoreapp3.1\SoproSpringBoard.Repository.csproj.CopyComplete
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\obj\Debug\netcoreapp3.1\SoproSpringBoard.Repository.dll
+C:\Users\Nikola Nushev\source\repos\SoproSpringBoard\SoproSpringBoard.Repository\obj\Debug\netcoreapp3.1\SoproSpringBoard.Repository.pdb

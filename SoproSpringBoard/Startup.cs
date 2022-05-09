@@ -7,7 +7,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using SoproSpringBoard.Domain.Identity;
 using SoproSpringBoard.Repository;
 using SoproSpringBoard.Repository.Implementation;
 using SoproSpringBoard.Repository.Interface;
@@ -33,8 +32,7 @@ namespace SoproSpringBoard
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-
-            services.AddDefaultIdentity<MovieApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
