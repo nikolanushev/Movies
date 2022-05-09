@@ -28,5 +28,10 @@ namespace SoproSpringBoard.Service.Implementation
         {
             return _genreRepository.GetAll().ToList();
         }
+
+        public Genre GetDetailsForGenre(int id)
+        {
+            return _genreRepository.Get(id);
+        }
     }
 }
