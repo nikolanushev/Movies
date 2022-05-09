@@ -5,8 +5,8 @@ using System.Text;
 
 namespace SoproSpringBoard.Domain.Models
 {
-    public class MoviesInLibrary
-    {
+    public class MoviesInLibrary : BaseEntity
+   {
         public int MovieId { get; set; }
 
         public int LibraryId { get; set; }
