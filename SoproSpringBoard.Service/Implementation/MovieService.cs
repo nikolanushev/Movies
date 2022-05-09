@@ -9,7 +9,7 @@ using System.Text;
 
 namespace SoproSpringBoard.Service.Implementation
 {
-    class MovieService : IMovieService
+    public class MovieService : IMovieService
     {
         public readonly IRepository<Movie> _movieRepository;
         public readonly IRepository<MoviesInLibrary> _moviesInLibraryRepository;

@@ -5,36 +5,42 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using SoproSpringBoard.Domain.Models;
 using SoproSpringBoard.Repository;
+using SoproSpringBoard.Service.Interface;
 
 namespace SoproSpringBoard.Controllers
 {
     public class MoviesController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IMovieService _movieService;
+        private readonly ILogger<MoviesController> _logger;
 
-        public MoviesController(ApplicationDbContext context)
+        public MoviesController(IGenreService movieService, ILogger<MoviesController> logger)
         {
-            _context = context;
+            _movieService = movieService;
+            _logger = logger;
         }
 
         // GET: Movies
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Movies.ToListAsync());
+            try
+            {
+                return View(_movieService.GetAllMovies());
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.Message);
+                return View(new List<Movie>());
+            }
         }
 
         // GET: Movies/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var movie = await _context.Movies
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var movie = _movieService.GetDetailsForMovie(id ?? 0);
             if (movie == null)
             {
                 return NotFound();
@@ -54,12 +60,11 @@ namespace SoproSpringBoard.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MovieName,MovieImage,MovieReleaseDate,MovieRating,MovieIMBDURL,Id")] Movie movie)
+        public async Task<IActionResult> Create(Movie movie)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(movie);
-                await _context.SaveChangesAsync();
+                _movieService.CreateNewMovie(movie);
                 return RedirectToAction(nameof(Index));
             }
             return View(movie);
@@ -73,7 +78,7 @@ namespace SoproSpringBoard.Controllers
                 return NotFound();
             }
 
-            var movie = await _context.Movies.FindAsync(id);
+            var movie = _movieService.GetDetailsForMovie(id ?? 0);
             if (movie == null)
             {
                 return NotFound();
@@ -86,7 +91,7 @@ namespace SoproSpringBoard.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("MovieName,MovieImage,MovieReleaseDate,MovieRating,MovieIMBDURL,Id")] Movie movie)
+        public async Task<IActionResult> Edit(int id, Movie movie)
         {
             if (id != movie.Id)
             {
@@ -97,8 +102,7 @@ namespace SoproSpringBoard.Controllers
             {
                 try
                 {
-                    _context.Update(movie);
-                    await _context.SaveChangesAsync();
+                    _movieService.UpdateExistingMovie(movie);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -124,14 +128,13 @@ namespace SoproSpringBoard.Controllers
                 return NotFound();
             }
 
-            var movie = await _context.Movies
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (movie == null)
+            var product = _movieService.GetDetailsForMovie(id ?? 0);
+            if (product == null)
             {
                 return NotFound();
             }
 
-            return View(movie);
+            return View(product);
         }
 
         // POST: Movies/Delete/5
@@ -139,15 +142,13 @@ namespace SoproSpringBoard.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var movie = await _context.Movies.FindAsync(id);
-            _context.Movies.Remove(movie);
-            await _context.SaveChangesAsync();
+            _movieService.DeleteMovie(id);
             return RedirectToAction(nameof(Index));
         }
 
         private bool MovieExists(int id)
         {
-            return _context.Movies.Any(e => e.Id == id);
+            return _movieService.GetDetailsForMovie(id) != null;
         }
     }
 }

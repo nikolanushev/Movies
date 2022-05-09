@@ -11,6 +11,8 @@ using SoproSpringBoard.Domain.Identity;
 using SoproSpringBoard.Repository;
 using SoproSpringBoard.Repository.Implementation;
 using SoproSpringBoard.Repository.Interface;
+using SoproSpringBoard.Service.Implementation;
+using SoproSpringBoard.Service.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,6 +49,10 @@ namespace SoproSpringBoard
 
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
+
+            services.AddTransient<IMovieService, MovieService>();
+            services.AddTransient<ILibraryService, LibraryService>();
+            services.AddTransient<IGenreService, GenreService>();
 
             services.AddControllersWithViews();
             services.AddRazorPages();
