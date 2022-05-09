@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SoproSpringBoard.Domain.Models
 {
-    public class MovieInGenre
+    public class MovieInGenre : BaseEntity
     {
         [ForeignKey("MovieId")]
         public int MovieId { get; set; }
